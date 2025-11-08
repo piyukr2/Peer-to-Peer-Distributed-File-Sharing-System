@@ -471,9 +471,11 @@ struct DownloadStatus {
 - A variable of this structure type is defined for every file being downloaded.
  and whenever a file's download starts an entry containing the link to this variable is put in the global state "Downloads" map.
 
-#### 7.2.2 Global State
+#### 7.2.2 State of client 
 
-Definition of Client Global state parameters: Every client instance maintains the following datastructures/variables in order to carry out its tasks. These parameters are separate, independent for each client, 'global' does not mean that it is shared by all the client instances.
+(Note: A client's state in any session is not required to be stored for next sessions, so we don't store the client state datastructures in any file. so client state is not persistent)
+
+Definition of Client state parameters: Every client instance maintains the following datastructures/variables in order to carry out its tasks. These parameters are separate, independent for each client.
 
 - `vector<string> trackers`: List of all tracker addresses
 - `string connected_tracker`: Currently active tracker
