@@ -473,7 +473,7 @@ struct DownloadStatus {
 
 #### 7.2.2 State of client 
 
-(Note: A client's state in any session is not required to be stored for next sessions, so we don't store the client state datastructures in any file. so client state is not persistent)
+(Note: A client's state in any session is not required to be stored for next sessions, so we don't store the client state datastructures in any file. So client state is not persistent, all the state datastructures, variables are stored in-memory only.)
 
 Definition of Client state parameters: Every client instance maintains the following datastructures/variables in order to carry out its tasks. These parameters are separate, independent for each client.
 
